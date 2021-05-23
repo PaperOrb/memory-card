@@ -36,7 +36,6 @@ html, body {
 .card-grid {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-  background-color: pink;
   height: 70vh;
   width: 70vw;
   margin: 5% auto;
