@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavBar } from "./components/NavBar";
 import { Card } from "./components/Card";
 
@@ -43,9 +43,13 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    score > topScore ? setTopScore((prevTopScore) => prevTopScore + 1) : console.log("no");
+  }, [score]);
+
   return (
     <div>
-      <NavBar score={score} />
+      <NavBar score={score} topScore={topScore} />
       <main>
         <div className="card-grid">{renderCards()}</div>
       </main>
