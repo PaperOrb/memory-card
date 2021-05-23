@@ -1,0 +1,50 @@
+:root {
+  --primary-color: rgb(45, 45, 65);
+  --secondary-color: rgb(33, 33, 47);
+  --text-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white
+}
+
+html, body {
+  background-color: var(--primary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  height: 5vh;
+  padding: 0 2rem;
+}
+
+.scores {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.score {
+  margin-right: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  background-color: pink;
+  height: 70vh;
+  width: 70vw;
+  margin: 5% auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  height: 14rem;
+  width: 14rem;
+}
